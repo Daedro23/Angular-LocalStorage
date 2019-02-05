@@ -1,0 +1,30 @@
+<div class="card"> 
+    <div class="card-header" align="center">Agregar Libros</div>
+        <div class="card-body">
+            <form (submit)="addBook()">
+                
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre" name="name" [(ngModel)]="name">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Editorial" name="editorial" [(ngModel)]="editorial">
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Autor" name="autor" [(ngModel)]="autor">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Edición" name="edition" [(ngModel)]="edition">
+        </div>
+    </div>
+
+    <br>
+    <input type="submit" value="Agregar Libro" class="btn btn-primary">
+
+        </form>
+    </div>
+</div>  
